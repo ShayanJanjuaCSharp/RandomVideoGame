@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="title">
+    <h1> Hackathon project title </h1>
+    </div>
+    <hr>
+    <div class="form">
+        <form method="POST">
+            <div class="checkboxes">
+                <label for="Xbox">Xbox</label>
+                <input type="checkbox" id="Xbox" name="Xbox" value="Xbox">
+                <label for="Playstation">Playstation</label>
+                <input type="checkbox" id="Playstation" name="Playstation" value="Playstation">
+                <label for="Steam">Steam</label>
+                <input type="checkbox" id="Steam" name="Steam" value="Steam">
+                <label for="Switch">NintendoSwitch</label> 
+                <input type="checkbox" id="Switch" name="Switch" value="Switch">
+
+            </div>
         
-    </head>
-    <form style = "background-color: aqua;" method = "post" action = "/roll">
-        <button name = "xbox">Xbox</button>
-    </form>
-</html> 
+            <div class="options">
+
+                <label for="Genre">Genre</label>
+                <select id="Genre">
+                    <option value="Genre1">Genre1 </option>
+                    <option value="Genre2">Genre2 </option>
+                    <option value="Genre3">Genre3 </option>
+
+                </select>
+            </div>
+            <div class="button">
+                <input type="submit" value="Roll">
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

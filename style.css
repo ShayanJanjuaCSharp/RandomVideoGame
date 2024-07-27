@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+
+}
+.title{
+    color: blueviolet;
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+    background-color: aquamarine;
+}
