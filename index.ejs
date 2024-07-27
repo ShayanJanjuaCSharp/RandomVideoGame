@@ -11,38 +11,42 @@
     </div>
     <br><br><br>
     <div >
-            <div class="choices">
-                <form method = "post" action = "/x">
-                    <button>Xbox</button>
-                </form>
-                <form method = "post" action = "/ps">
-                    <button>PlayStation</button>
-                </form>
-                <form method = "post" action = "/ns">
-                    <button>Nintendo Switch</button>
-                </form> 
-                <form method = "post" action = "/s">
-                    <button>Steam</button>
-                </form>
+        <div class="choices">
+            <form method = "get" action = "/x">
+                <button>Xbox</button>
+            </form>
+            <form method = "get" action = "/ps">
+                <button>PlayStation</button>
+            </form>
+            <form method = "get" action = "/ns">
+                <button>Nintendo Switch</button>
+            </form> 
+            <form method = "get" action = "/s">
+                <button>Steam</button>
+            </form>
             </div>
-        
-            <div class="options">
-
-                <label for="Genre">Genre</label>
-                <select id="Genre">
-                    <option value="Genre1">Genre1 </option>
-                    <option value="Genre2">Genre2 </option>
-                    <option value="Genre3">Genre3 </option>
-
-                </select>
-            </div>
+            <form method = "post" action="/roll" name = "Genre">
+                <div class="options">
+                    <label for="Gen">Genre</label>
+                    <select name="genre">
+                        <option value="" selected>Select</option>
+                        <option value="casual">Casual</option>
+                        <option value="action">Action</option>
+                        <option value="sports">Sports</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="indie">Indie</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="racing">Racing</option>
+                        <option value="rpg">RPG</option>
+                    </select>
+                </div>
             <div class="button">
-                <form method = "post"   action = "/roll">
-                    <input type="submit" value="Roll">
-                </form>
+                <input type="submit" value="Roll">
+            </div>
+            </form>
                 
 
-            </div>
+            
     </div>
 
 </body>

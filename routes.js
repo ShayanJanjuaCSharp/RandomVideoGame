@@ -1,37 +1,34 @@
 var express = require("express");
-
+var path = require('path');
+var fs = require('fs');
+const { Console } = require("console");
 
 var router = express.Router();
-
+router.use(express.urlencoded({ extended: true }));
 var choice = "x";
+
 
 router.get("/",function(req,res){
     res.render("index");
     console.log("webpage loaded");
 });
 
-router.post("/roll",function(req,res){
+router.post("/roll",(req,res) =>{
     console.log(choice);
-    res.render("index");
+    const genchoice = req.body.genre;
 });
-router.post("/x",function(req,res){
-    console.log("hi");
-    choice = "x";
-    res.render("index");
+router.get("/x",function(req,res){
+    choice = 'x';  
 });
-router.post("/ps",function(req,res){
-    console.log("hi");
-    choice = "ps";
-    res.render("index");
+router.get("/ps",function(req,res){
+    choice = "ps";  
 });
-router.post("/ns",function(req,res){
-    console.log("hi");
+router.get("/ns",function(req,res){
     choice = "ns";
-    res.render("index");
 });
-router.post("/s",function(req,res){
+router.get("/s",function(req,res){
     console.log("hi");
-    choice = "s";
-    res.render("index");
+    choice = "s"; 
 });
+
 module.exports = router;
