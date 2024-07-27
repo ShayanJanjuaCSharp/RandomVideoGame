@@ -1,0 +1,11 @@
+{
+  "name": "rvg",
+  "version": "1.0.0",
+  "description": "A NodeJS app designed to provide gamers with a way of finding new and interesting games to play",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shayan",
+  "license": "MIT"
+}
