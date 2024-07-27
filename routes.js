@@ -8,4 +8,7 @@ router.get("/",function(req,res){
     console.log("webpage loaded");
 });
 
+router.post("/roll",function(req,res){
+    console.log("hi");
+});
 module.exports = router;
