@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
 
     <div class="title">
-    <h1> Hackathon project title </h1>
+        <a href="https://www.fontspace.com/category/minecraft"><img src="https://see.fontimg.com/api/renderfont4/VGORe/eyJyIjoiZnMiLCJoIjo0NCwidyI6MTAwMCwiZnMiOjQ0LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0VDRTFFMSIsInQiOjF9/UmFuZG9tIFZpZGVvIEdhbWUgR2VuZXJhdG9y/minecraft-ten.png" alt="Minecraft fonts"></a>
     </div>
-    <hr>
-    <div class="form">
-        <form method="POST">
-            <div class="checkboxes">
-                <label for="Xbox">Xbox</label>
-                <input type="checkbox" id="Xbox" name="Xbox" value="Xbox">
-                <label for="Playstation">Playstation</label>
-                <input type="checkbox" id="Playstation" name="Playstation" value="Playstation">
-                <label for="Steam">Steam</label>
-                <input type="checkbox" id="Steam" name="Steam" value="Steam">
-                <label for="Switch">NintendoSwitch</label> 
-                <input type="checkbox" id="Switch" name="Switch" value="Switch">
-
+    <br><br><br>
+    <div >
+            <div class="choices">
+                <form method = "post" action = "/x">
+                    <button>Xbox</button>
+                </form>
+                <form method = "post" action = "/ps">
+                    <button>PlayStation</button>
+                </form>
+                <form method = "post" action = "/ns">
+                    <button>Nintendo Switch</button>
+                </form> 
+                <form method = "post" action = "/s">
+                    <button>Steam</button>
+                </form>
             </div>
         
             <div class="options">
@@ -35,10 +37,12 @@
                 </select>
             </div>
             <div class="button">
-                <input type="submit" value="Roll">
+                <form method = "post"   action = "/roll">
+                    <input type="submit" value="Roll">
+                </form>
+                
 
             </div>
-        </form>
     </div>
 
 </body>

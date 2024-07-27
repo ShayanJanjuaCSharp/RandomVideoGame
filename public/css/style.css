@@ -1,5 +1,6 @@
-body{
-    background-color: aqua;
+*{
+    background-color: lightsteelblue;
+    text-align: center;
 
 }
 .title{
@@ -7,10 +8,12 @@ body{
     text-align: center;
 }
 
-.form{
-    text-align: center;
-}
+
 input{
     border-radius: 10px;
     background-color: aquamarine;
+}
+.choices{
+    display: inline-block;
+
 }
