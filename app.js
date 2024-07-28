@@ -2,6 +2,7 @@ var express = require("express");
 var path = require("path");
 var routes = require("./routes");
 var constants = require("./constants/constants");
+const cookieParser = require('cookie-parser');
 
 var app = express();
 
@@ -12,6 +13,7 @@ app.set('trust proxy', true)
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 app.listen(app.get("port"), function(){
     console.log("Server Started on port " + app.get("port"));

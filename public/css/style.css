@@ -6,11 +6,11 @@
 
 
 
-button{
-    border-radius: 10px;
-    background-color: aquamarine;
-}
 .choices{
     display: inline-block;
 
+}
+
+.xbox{
+    background-image: 'public/images/xbox.jpg';
 }
